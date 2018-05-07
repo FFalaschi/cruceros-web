@@ -1,0 +1,19 @@
+# Site settings
+title: Cruceros Iguazú
+description: Tres naciones, dos ríos, un lugar
+baseurl: ""
+url: "http://www.crucerosiguazu.com"
+timezone: America/Argentina/
+
+# Under The Hood
+markdown: kramdown
+permalink: /:title
+
+#Información de Cruceros Iguazu
+email: info@crucerosiguazu.com
+phone: 
+  primary: +54 3757 42 1111
+  alt: +54 3757 42 0000
+  cel: +54 3757 15 615111
+facebook_username: crucerosiguazuarg/
+instagram_username: crucerosiguazu/

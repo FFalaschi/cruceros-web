@@ -1,0 +1,118 @@
+// Navigation
+
+.navbar-fixed-top {
+    top: 0;
+    border-width: 0px;
+}
+
+.navbar {
+    border: 0px;
+}
+
+.nav-logo {
+    padding: 0 15px;
+    margin: 10px 0 10px 0;
+}
+
+.navbar-nav {
+    margin: auto;
+    padding-top: 10px;
+}
+
+.navbar-toggle {
+    margin-top: 18px;
+}
+
+.navbar-default {
+    background-color: white;
+    border-color: rgba($theme-dark, .5);
+    @include sans-serif-font;
+    @include transition-all;
+    .navbar-header .navbar-brand {
+        color: $theme-primary;
+        @include sans-serif-font;
+        font-weight: 700;
+        text-transform: uppercase;
+        &:hover,
+        &:focus {
+            color: darken($theme-primary, 10%);
+        }
+    }
+    .nav {
+        > li {
+            > a,
+            > a:focus {
+                text-transform: uppercase;
+                font-weight: 700;
+                font-size: 13px;
+                color: $theme-dark;
+                &:hover {
+                    color: $theme-primary;
+                }
+            }
+            &.active {
+                > a,
+                > a:focus {
+                    color: $theme-primary !important;
+                    background-color: transparent;
+                    &:hover {
+                        background-color: transparent;
+                    }
+                }
+            }
+        }
+    }
+    @media (min-width: 768px) {
+        background-color: transparent;
+        border-color: rgba(white, .3);
+        .navbar-header .navbar-brand {
+            color: rgba(white, .7);
+            &:hover,
+            &:focus {
+                color: white;
+            }
+        }
+        .nav > li > a,
+        .nav > li > a:focus {
+            color: rgba(white, .7);
+            &:hover {
+                color: white;
+            }
+        }
+        &.affix { //On Scroll
+            background-color: white;
+            border-color: rgba($theme-dark, .5);
+            .navbar-header .navbar-brand {
+                color: $theme-primary;
+                font-size: 14px;
+                &:hover,
+                &:focus {
+                    color: darken($theme-primary, 10%);
+                }
+            }
+            //Change the color for the menu items on scroll
+            .nav > li > a,
+            .nav > li > a:focus {
+                color: $theme-dark;
+                &:hover {
+                    color: $theme-primary;
+                }
+            }
+            //Change Colors for the Logo
+            #wings {
+                fill: #228451;
+            }
+            #tail {
+                fill: #3DA1AB;
+            }
+            #lettering {
+                fill: #228451
+            }
+            svg {
+                circle {
+                    fill: $theme-primary;
+                }
+            }
+        }
+    }
+}

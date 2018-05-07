@@ -1,0 +1,147 @@
+
+//Imports
+@import "nav";
+@import "header";
+@import "sections";
+@import "promo";
+@import "contact";
+@import "socialmedia";
+@import "bootstrap-overrides";
+
+//Base CSS
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    @include serif-font;
+}
+
+hr {
+    border-color: $theme-primary;
+    border-width: 3px;
+    max-width: 100px;
+}
+
+hr.light {
+    border-color: white;
+}
+
+hr.hr-section {
+    margin-top: 50px;
+    border-color: #c3c3c3;
+    border-width: 2px;
+    max-width: 100%;
+}
+
+a {
+    @include transition-all;
+    color: $theme-primary;
+    &:hover,
+    &:focus {
+        color: darken($theme-primary, 10%);
+    }
+}
+
+
+h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: lighter;
+}
+
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @include sans-serif-font;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 15px;
+    margin: 10px auto 10px;
+}
+
+h2:before {
+    content: "";
+    border-top: 2px solid;
+    width: 70px;
+    padding-bottom: 4px;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+h2:after {
+    content: "";
+    border-top: 2px solid;
+    width: 70px;
+    padding-bottom: 4px;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+h3 {
+    font-size: 46px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 1.3em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    letter-spacing: 0.06em;
+    font-weight: 300;
+}
+
+.bg-primary {
+    background-color: $theme-primary;
+}
+
+.bg-dark {
+    background-color: $theme-dark;
+    color: white;
+    a {
+        font-size: 16px;
+        color: white;
+        letter-spacing: 0.03em;
+
+    }
+}
+
+.bg-blue {
+    background-color: $theme-blue;
+    color: white;
+}
+
+.text-faded {
+    color: rgba(white, .7);
+}
+
+section {
+    padding: 80px 0 90px 0;
+}
+
+aside {
+    padding: 40px 0;
+}
+
+.no-padding {
+    padding: 0;
+}
