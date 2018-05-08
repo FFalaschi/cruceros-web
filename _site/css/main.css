@@ -109,7 +109,7 @@ header {
       margin: 20px auto; }
     header .header-content .header-content-inner p {
       font-weight: 300;
-      color: rgba(255, 255, 255, 0.8);
+      color: white;
       margin-bottom: 50px; }
   @media (min-width: 768px) {
     header {
@@ -393,6 +393,13 @@ img::-moz-selection {
 body {
   -webkit-tap-highlight-color: #4C4845; }
 
+#recorrido img {
+  width: 100%;
+  max-height: 380px; }
+
+#about h2 {
+  margin-bottom: 60px; }
+
 html,
 body {
   height: 100%;
@@ -425,7 +432,8 @@ a {
 
 h1 {
   font-family: 'Josefin Sans', sans-serif;
-  font-weight: lighter; }
+  font-weight: lighter;
+  font-style: italic; }
 
 h2,
 h3,

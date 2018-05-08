@@ -7,6 +7,8 @@
 @import "contact";
 @import "socialmedia";
 @import "bootstrap-overrides";
+@import "recorrido";
+@import "about";
 
 //Base CSS
 
@@ -50,6 +52,7 @@ a {
 h1 {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: lighter;
+    font-style: italic;
 }
 
 
